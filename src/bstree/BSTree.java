@@ -8,6 +8,7 @@ package bstree;
 public class BSTree<T extends Comparable> {
     //variable declaration
     private BSNode root;
+    private int size=0;
 
 
     /**
@@ -29,6 +30,7 @@ public class BSTree<T extends Comparable> {
          * create the BSNode and return
          */
         if (BSNode == null) {
+            size++;
             return new BSNode((Comparable) data);
         }
 
@@ -74,5 +76,10 @@ public class BSTree<T extends Comparable> {
             print(root.right);
         }
     }
-
+    /**
+     * print no of nodes in Binary Search tree
+     */
+    public void size() {
+        System.out.print("\nSize of tree is: " + size);
+    }
 }
