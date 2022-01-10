@@ -33,6 +33,7 @@ public class BSOperations {
         tree.print();
         //print size
         tree.size();
-
+        //search node
+        tree.search(63);
     }
 }
