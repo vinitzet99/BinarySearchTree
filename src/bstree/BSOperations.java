@@ -11,6 +11,16 @@ package bstree;
 public class BSOperations {
 
     public static void main(String[] args) {
-        System.out.println("Binary search tree operations");
+        System.out.println("Welcome to Binary search tree operations");
+        //object creation
+        BSTree tree = new BSTree();
+        //insert operation
+        tree.insert(56);
+        tree.insert(30);
+        tree.insert(70);
+        //print tree
+        System.out.print("Binary Search Tree: ");
+        tree.print();
+
     }
 }
